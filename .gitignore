@@ -1,0 +1,12 @@
+.env
+.sam
+.venv
+artifacts
+configs
+src
+
+*.log
+*.db
+.DS_Store
+orchestrator.db
+webui_gateway.db
