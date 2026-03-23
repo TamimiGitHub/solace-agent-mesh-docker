@@ -100,7 +100,7 @@ First, create the external Docker network that the containers will use:
 docker network create sam-network
 ```
 
-#### 2. Set Up Python Environment
+#### 2. [Optional for solace agent mesh cli] Set Up Python Environment
 
 Activate a Python virtual environment:
 
