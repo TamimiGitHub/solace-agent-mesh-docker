@@ -203,26 +203,26 @@ The `docker-compose.yaml` defines two services:
 ```
 ┌─────────────────────────────────────────────────────┐
 │         Docker Compose Deployment                   │
-│                                                      │
+│                                                     │
 │  ┌────────────────────────────────────────────────┐ │
 │  │  Container: solace-broker                      │ │
 │  │  Image: solace/solace-pubsub-standard:latest   │ │
 │  │  Ports: 8008, 8080, 55554, 2222                │ │
 │  └───────────────────┬────────────────────────────┘ │
-│                      │                               │
-│                      │ A2A Protocol                  │
-│                      │                               │
+│                      │                              │
+│                      │ A2A Protocol                 │
+│                      │                              │
 │  ┌───────────────────▼────────────────────────────┐ │
 │  │  Container: sam-ent                            │ │
-│  │  Image: solace-agent-mesh-enterprise:1.95.2    │ │
+│  │  Image: solace-agent-mesh:latest               │ │
 │  │  Port: 8000                                    │ │
 │  │                                                │ │
 │  │  Components:                                   │ │
-│  │  ├─ Web UI Gateway (port 8000)                │ │
-│  │  └─ Orchestrator Agent                        │ │
+│  │  ├─ Web UI Gateway (port 8000)                 │ │
+│  │  └─ Orchestrator Agent                         │ │
 │  └────────────────────────────────────────────────┘ │
-│                                                      │
-│  Access: http://localhost:8000                       │
+│                                                     │
+│  Access: http://localhost:8000                      │
 └─────────────────────────────────────────────────────┘
 ```
 
