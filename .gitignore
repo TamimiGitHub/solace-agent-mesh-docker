@@ -1,10 +1,6 @@
 .env
-.sam
 .venv
 artifacts
-configs
-src
-
 *.log
 *.db
 .DS_Store
