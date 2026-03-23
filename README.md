@@ -196,6 +196,36 @@ The `docker-compose.yaml` defines two services:
   - `./.env` - Environment variables
   - `./artifacts` - Generated artifacts
 
+
+
+### This Repository Deploys
+
+```
+┌─────────────────────────────────────────────────────┐
+│         Docker Compose Deployment                   │
+│                                                      │
+│  ┌────────────────────────────────────────────────┐ │
+│  │  Container: solace-broker                      │ │
+│  │  Image: solace/solace-pubsub-standard:latest   │ │
+│  │  Ports: 8008, 8080, 55554, 2222                │ │
+│  └───────────────────┬────────────────────────────┘ │
+│                      │                               │
+│                      │ A2A Protocol                  │
+│                      │                               │
+│  ┌───────────────────▼────────────────────────────┐ │
+│  │  Container: sam-ent                            │ │
+│  │  Image: solace-agent-mesh-enterprise:1.95.2    │ │
+│  │  Port: 8000                                    │ │
+│  │                                                │ │
+│  │  Components:                                   │ │
+│  │  ├─ Web UI Gateway (port 8000)                │ │
+│  │  └─ Orchestrator Agent                        │ │
+│  └────────────────────────────────────────────────┘ │
+│                                                      │
+│  Access: http://localhost:8000                       │
+└─────────────────────────────────────────────────────┘
+```
+
 ## Configuration Files
 
 All configuration files are located in the `configs/` directory. By default, `sam init` generates configurations for the Orchestrator Agent and Web UI Gateway. This directory contains all Solace Agent Mesh components organized by type:
@@ -213,16 +243,6 @@ All configuration files are located in the `configs/` directory. By default, `sa
 
 - **`configs/shared_config.yaml`** - Shared configurations used across all components
 - **`configs/logging_config.yaml`** - Logging settings for all Solace Agent Mesh components
-
-## Usage Examples
-
-Once running, you can interact with the system through the web interface to:
-
-1. **Ask Questions**: Get intelligent responses powered by LLM
-2. **Execute Tasks**: Request complex workflows that span multiple agents
-3. **Create Artifacts**: Generate documents, reports, and data files
-4. **Analyze Data**: Perform data analysis and transformations
-5. **Track Progress**: Monitor task execution with real-time updates
 
 ## Development
 
