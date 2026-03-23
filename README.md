@@ -1,5 +1,23 @@
 # Solace Agent Mesh with Docker
 
+## Table of Contents
+
+- [Overview](#overview)
+  - [What is Solace Agent Mesh?](#what-is-solace-agent-mesh)
+  - [Architecture](#architecture)
+- [Quick Start](#quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Setup Instructions](#setup-instructions)
+- [Docker Services](#docker-services)
+- [Configuration Files](#configuration-files)
+- [Usage Examples](#usage-examples)
+- [Development](#development)
+  - [Viewing Logs](#viewing-logs)
+  - [Stopping Services](#stopping-services)
+  - [Rebuilding](#rebuilding)
+- [Environment Variables Reference](#environment-variables-reference)
+- [Additional Resources](#additional-resources)
+
 ## Overview
 
 This project provides a containerized deployment of **[Solace Agent Mesh](https://github.com/SolaceLabs/solace-agent-mesh)** - an AI agentic system that coordinates multiple specialized agents to handle complex tasks through intelligent orchestration and workflow management.
