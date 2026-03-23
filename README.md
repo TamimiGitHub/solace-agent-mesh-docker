@@ -106,11 +106,11 @@ Activate a Python virtual environment:
 
 ```bash
 # On macOS/Linux
-python3.12 -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 
 # On Windows
-python3.12 -m venv .venv
+python3 -m venv .venv
 .venv\Scripts\activate
 ```
 
