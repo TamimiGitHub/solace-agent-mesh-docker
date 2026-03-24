@@ -87,7 +87,7 @@ Key Components:
 ### Prerequisites
 
 - **Docker Desktop** installed and running
-- **Python 3.12+** for local setup
+- **Python 3.10, 3.11, 3.12, 3.13 +** for local setup
 - **LLM Service Access** (e.g., LiteLLM endpoint with API key)
 
 ### Setup Instructions

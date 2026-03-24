@@ -6,3 +6,6 @@ artifacts
 .DS_Store
 orchestrator.db
 webui_gateway.db
+.sam
+configs
+src

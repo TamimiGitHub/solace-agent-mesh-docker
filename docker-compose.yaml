@@ -41,7 +41,6 @@ services:
           # SMF
           - '55554:55555'
           # SMF Compressed
-          - '55003:55003'
           # SMF over TLS
           - '55443:55443'
           # SSH connection to CLI
@@ -66,7 +65,7 @@ services:
         - ./src:/app/src
         - ./.env:/app/.env
         - ./artifacts:/tmp/samv2
-        # - enterprise-logs:/app  # Map the entire /app directory to enterprise-logs
+        - enterprise-logs:/app  # Map the entire /app directory to enterprise-logs
         networks:
         - sam-network
         ports:
@@ -80,6 +79,7 @@ services:
     
 volumes:
     solace-storage:
+    enterprise-logs:
 
 networks:
     sam-network:
