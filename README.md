@@ -15,7 +15,6 @@
   - [Viewing Logs](#viewing-logs)
   - [Stopping Services](#stopping-services)
   - [Rebuilding](#rebuilding)
-- [Environment Variables Reference](#environment-variables-reference)
 - [Additional Resources](#additional-resources)
 
 ## Overview
@@ -274,20 +273,6 @@ If you make changes to configurations:
 ```bash
 docker compose restart
 ```
-
-## Environment Variables Reference
-
-| Variable | Description | Default | Required |
-|----------|-------------|---------|----------|
-| `LLM_SERVICE_ENDPOINT` | LLM service URL | - | Yes |
-| `LLM_SERVICE_API_KEY` | API key for LLM service | - | Yes |
-| `LLM_SERVICE_PLANNING_MODEL_NAME` | Model for planning tasks | - | Yes |
-| `LLM_SERVICE_GENERAL_MODEL_NAME` | Model for general tasks | - | Yes |
-| `NAMESPACE` | Agent namespace prefix | `demo/` | Yes |
-| `SOLACE_BROKER_URL` | Solace broker WebSocket URL | `ws://solace-broker:8008` | Yes |
-| `FASTAPI_HOST` | FastAPI bind address | `0.0.0.0` | Yes |
-| `FASTAPI_PORT` | FastAPI port | `8000` | No |
-| `WEBUI_GATEWAY_ID` | Gateway identifier | auto-generated | No |
 
 ## Additional Resources
 
