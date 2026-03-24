@@ -278,5 +278,4 @@ docker compose restart
 
 - **[Solace Agent Mesh Documentation](https://solacelabs.github.io/solace-agent-mesh/docs/documentation/getting-started)** - Official getting started guide
 - **[Solace Agent Mesh GitHub Repository](https://github.com/SolaceLabs/solace-agent-mesh)** - Source code and examples
-- [Solace Broker Documentation](https://docs.solace.com/Cloud/cloud.htm) - Event broker documentation
 - [Docker Compose Documentation](https://docs.docker.com/compose/) - Container orchestration guide
